@@ -1,0 +1,30 @@
+<header>
+  <aside class="logo">
+    <img src="img/pwr.png" alt="logo" />
+  </aside>
+  <nav>
+    <input type="checkbox" id="checkbox-menu" />
+    <ul class="menu touch">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="My_Projects.php">My Projects</a></li>
+      <li><a href="About_me.php">About me</a></li>
+      <li>
+        <?php
+        if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true)
+        {
+          echo "Hello, ".$_SESSION['user_name']."!";
+          echo '<a href="log_out.php">Log out</a>';
+        }
+        else
+        {
+          echo '<a href="authentification.php">Log in / Sign up</a>';
+        }
+        ?>
+        
+      </li>
+    </ul>
+    <label for="checkbox-menu">
+      <span class="toggle">☰</span>
+    </label>
+  </nav>
+</header>

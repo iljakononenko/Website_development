@@ -1,0 +1,24 @@
+@mixin max-size($max-width, $max-height: $max-width) {
+  max-width: $max-width;
+  max-height: $max-height;
+}
+
+@mixin flex-properties(
+  $flex-direction,
+  $set-align-items-center: false,
+  $justify-content: space-between
+) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+
+  @if $set-align-items-center {
+    align-items: center;
+  }
+}
+
+@mixin responsive-properties {
+  @media screen and (min-width: 765px) {
+    @content;
+  }
+}
