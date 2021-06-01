@@ -37,8 +37,8 @@ function init()
 {
     _img = new Image();
     _img.addEventListener('load', onImage);
-    _img.src = "myszka.jpg";
-    _img_src = "myszka.jpg";
+    _img.src = "img/myszka.jpg";
+    _img_src = "img/myszka.jpg";
 }
 
 function new_game(_src)
