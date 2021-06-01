@@ -1,0 +1,54 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body
+{
+	height: 100%;
+	width: 100%;
+	
+}
+
+.flex-container
+{
+	display: flex;
+	flex-direction: column;
+}
+
+
+canvas 
+{
+	display: inline;
+}
+
+button
+{
+	margin: 10px auto;
+	padding: 0 10px;
+	height: 50px;
+}
+
+input
+{
+	width: 50px;
+	display: block;
+}
+
+.container
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto 10px;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.container img
+{
+	width: 100px;
+	margin-left: 10px;
+	height: 100px;
+}
